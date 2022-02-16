@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/pattern-background-desktop.svg"),
+    hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.hero-img {
+  width: 100%;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+main {
+  width: 25rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 1.2rem;
+  background-color: white;
+}
+.order-plan {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.order-plan h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1e2a49;
+}
+.summary {
+  margin-bottom: 1.5rem;
+  line-height: 1.45;
+  color: #8a8fae;
+}
+.order-plan h1,
+.summary {
+  text-align: center;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.price-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.6rem;
+  /* border: 1px solid red; */
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.8rem;
+}
+.price-plan-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.proceed-payment-action {
+  margin-top: 1.8rem;
+}
+.proceed-payment-action a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.button {
+  background-color: #4452e1;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  box-shadow: 6px 12px 8px #d6d9ee;
+}
+.proceed-payment-action a:nth-child(2) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #8a8fae;
+}
