@@ -74,7 +74,7 @@ main {
   gap: 1.2rem;
 }
 .proceed-payment-action {
-  margin-top: 1.8rem;
+  margin-top: 2rem;
 }
 .proceed-payment-action a {
   display: block;
@@ -87,10 +87,32 @@ main {
   font-weight: bold;
   padding: 0.8rem;
   border-radius: 0.6rem;
-  box-shadow: 6px 12px 8px #d6d9ee;
+  box-shadow: 0.4rem 0.8rem 1rem #d6d9ee;
+}
+.button:hover {
+  background-color: #766cf1;
 }
 .proceed-payment-action a:nth-child(2) {
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
   margin-bottom: 1.5rem;
+  font-weight: bold;
   color: #8a8fae;
+}
+.proceed-payment-action a:nth-child(2):hover {
+  color: #3c4358;
+}
+.change-option:hover {
+  text-decoration: none;
+  color: #7a6ed9;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background: url("./images/pattern-background-mobile.svg"),
+      hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main {
+    width: 22.5rem;
+  }
 }
